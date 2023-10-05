@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+    & h2{
+        text-align: center;
+    }
+
+    & figure{
+        margin: 0 auto;
+        border: 2px solid #e1e1e1;
+        padding: 10px;
+
+        & img{
+            display: block;
+            margin: 0 auto;
+
+            &:hover{
+                width: 30%;
+                position: fixed;
+            }
+        }
+
+        & figcaption{
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+    }
+
+}

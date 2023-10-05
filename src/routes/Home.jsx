@@ -1,8 +1,8 @@
-export default function Home() {
-  return (
-    <div>
-        <h1>MINHA CASA</h1>
-        <p>Seja BOM!</p>
-    </div>
+export default function Home() { 
+  return ( 
+      <div>
+          <h2> Aprendendo REACT + FIAP </h2>
+          <link /> 
+      </div>
   )
 }

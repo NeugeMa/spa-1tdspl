@@ -35,7 +35,7 @@ export default function InserirProduto() {
         navigate("/produtos")
     };
 
-  return (
+return (
     <div>
         <h1>Inserir Produto</h1>
         <div>
@@ -65,5 +65,5 @@ export default function InserirProduto() {
             </form>
         </div>
     </div>
-  )
+    )
 }

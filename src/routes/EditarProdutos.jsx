@@ -4,88 +4,88 @@ import { useState } from "react";
 
 export default function EditarProdutos() {
 
-  document.title = "Editar Produtos";
+    document.title = "Editar Produtos";
 
-  //Criando um mecanismo de navegação com useNavigate()
-  const navigate = useNavigate();
+    //Criando um mecanismo de navegação com useNavigate()
+    const navigate = useNavigate();   // useNavigate é usado para navegar entre as páginas
 
-  //Receber o ID do produto pelo HOOK useParams( );
-  const {id} = useParams();
+    //Receber o ID do produto pelo HOOK useParams( );
+    const {id} = useParams();
 
-  //Recuperar o produto na lista pelo ID.
-  const produtoRecuperado = ListaProdutos.filter( produto => produto.id == id );
+    //Recuperar o produto na lista pelo ID.
+    const produtoRecuperado = ListaProdutos.filter( produto => produto.id == id );
 
-  const [produto,setProduto] = useState({
-    id: produtoRecuperado[0].id,
-    nome: produtoRecuperado[0].nome,
-    desc: produtoRecuperado[0].desc,
-    preco: produtoRecuperado[0].preco,
-    img: produtoRecuperado[0].img,
-  });
+    const [produto,setProduto] = useState({
+        id: produtoRecuperado[0].id,
+        nome: produtoRecuperado[0].nome,
+        desc: produtoRecuperado[0].desc,
+        preco: produtoRecuperado[0].preco,
+        img: produtoRecuperado[0].img,
+    });
 
-  const handleChange = (event) =>{
-  
-    //Executando uma desestruturação no elemento que disparou a ação.
-    const {name, value} = event.target;
-
-    //Utilizando as propriedades desestruturadas eu vou setar elas no objeto produto
-    // utilizando o SPREAD.
-    setProduto({...produto,[name]:value});
-  }
-  
-  const handleSubmit = (event) =>{
-    event.preventDefault();
+    const handleChange = (event) =>{
     
-    let indice;
+        //Executando uma desestruturação no elemento que disparou a ação.
+        const {name, value} = event.target;
 
-    indice = ListaProdutos.findIndex((item) => item.id === produto.id);
+        //Utilizando as propriedades desestruturadas eu vou setar elas no objeto produto
+        // utilizando o SPREAD.
+        setProduto({...produto,[name]:value});
+    }
     
-    ListaProdutos.splice(indice, 1, produto);
+    const handleSubmit = (event) =>{
+        event.preventDefault();
+        
+        let indice;
 
-    alert("Produto alterado com sucesso!");
+        indice = ListaProdutos.findIndex((item) => item.id === produto.id);
+        
+        ListaProdutos.splice(indice, 1, produto);
 
-    navigate("/produtos")
-  }
-  
+        alert("Produto alterado com sucesso!");
 
-  return (
-      <div>
-        <h1>Editar Produtos</h1> 
-  
+        navigate("/produtos")
+    }
+    
+
+    return (
         <div>
-          <form onSubmit={handleSubmit}>
-            <fieldset>
-              <legend>Produto a ser Editado</legend>
-              <div>
-                <input type="hidden" name="id" value={produto.id}/>
-              </div>
-              <div>
-                <label htmlFor="idNome">Nome:</label>
-                <input type="text" name="nome" id="idNome" value={produto.nome} onChange={handleChange}/>
-              </div>
-              <div>
-                <label htmlFor="idDesc">Descrição:</label>
-                <input type="text" name="desc" id="idDesc" value={produto.desc} onChange={handleChange}/>
-              </div>
-              <div>
-                <label htmlFor="idPreco">Preço:</label>
-                <input type="text" name="preco" id="idPreco" value={produto.preco} onChange={handleChange}/>
-              </div>
-              <div>
-                <button>EDITAR</button>
-              </div>
+            <h1>Editar Produtos</h1> 
+    
+            <div>
+            <form onSubmit={handleSubmit}>
+                <fieldset>
+                <legend>Produto a ser Editado</legend>
+                <div>
+                    <input type="hidden" name="id" value={produto.id}/>
+                </div>
+                <div>
+                    <label htmlFor="idNome">Nome:</label>
+                    <input type="text" name="nome" id="idNome" value={produto.nome} onChange={handleChange}/>
+                </div>
+                <div>
+                    <label htmlFor="idDesc">Descrição:</label>
+                    <input type="text" name="desc" id="idDesc" value={produto.desc} onChange={handleChange}/>
+                </div>
+                <div>
+                    <label htmlFor="idPreco">Preço:</label>
+                    <input type="text" name="preco" id="idPreco" value={produto.preco} onChange={handleChange}/>
+                </div>
+                <div>
+                    <button>EDITAR</button>
+                </div>
 
-            </fieldset>
-          </form>
+                </fieldset>
+            </form>
+            </div>
+
+            <div>
+                <p>Nome: {produto.nome}</p>
+                <p>Desc: {produto.desc}</p>
+                <p>Preço: {produto.preco}</p>
+            </div>
+
+
         </div>
-
-          <div>
-            <p>Nome: {produto.nome}</p>
-            <p>Desc: {produto.desc}</p>
-            <p>Preço: {produto.preco}</p>
-          </div>
-
-
-      </div>
-  )
+    )
 }

@@ -33,16 +33,13 @@ document.title = "Excluir Produtos";
                             }) // Utilizando agora status de servidor para me guiar
                             .then((response) => {
                                     if (response.status === 204) { // Condição verdadeira 
-                                        alert("Erro ao excluir o produto. Tente novamente.");
+                                        alert("Produto excluido :D");
                                             navigate("/produtos");
                             
                                         } else {    
-                                            alert("Produto excluido ;D");   }   })  // Condição Falsa
+                                            alert("Erro ao excluir o produto. Tente novamente.");   }   })  // Condição Falsa
                         
-                                            .catch((error) => {
-                                                console.error("Erro ao excluir o produto:", error);
-                                                        alert("Erro ao excluir o produto. Tente novamente.");
-                                                                                                                }); };
+                                            .catch((error) => console.error("Erro ao excluir o produto:", error)  ); };
                     
                             if (!produto) {
                                 return <p>Carregando...</p>;
@@ -68,7 +65,7 @@ return (
                 <figcaption> {produto.nome} - <span>R$ {produto.preco}</span> </figcaption>
             </figure>
 
-            <div className={style.bnt}>
+            <div className={style.botao}>
             <button onClick={handleExcluirProduto}>EXCLUIR</button>
             <button onClick={() => navigate("/produtos")}>CANCELAR</button>
             </div>

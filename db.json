@@ -1,13 +1,6 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Teclado",
-      "desc": "Mecânico",
-      "preco": 150,
-      "img": "https://picsum.photos/100/100"
-    },
-    {
       "id": 2,
       "nome": "Mouse",
       "desc": "Óptico",
@@ -33,34 +26,6 @@
       "nome": "Cadeira Gamer",
       "desc": "Telescópica",
       "preco": 2500,
-      "img": "https://picsum.photos/100/100"
-    },
-    {
-      "id": 10,
-      "nome": "Cubo Mágico",
-      "desc": "Cubo elétrico",
-      "preco": "330",
-      "img": "https://d3ddx6b2p2pevg.cloudfront.net/Custom/Content/Products/11/15/1115677_cubo-magico-sunny-rubiks-3x3-2794_m4_637973762528753205.jpg"
-    },
-    {
-      "id": 11,
-      "nome": "Cubo Mágico",
-      "desc": "Cubo elétrico",
-      "preco": "330",
-      "img": "https://d3ddx6b2p2pevg.cloudfront.net/Custom/Content/Products/11/15/1115677_cubo-magico-sunny-rubiks-3x3-2794_m4_637973762528753205.jpg"
-    },
-    {
-      "id": 12,
-      "nome": "Smart Watch",
-      "desc": "Smart Watch Samsung",
-      "preco": "1200",
-      "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch5-bt-44mm-prata-16gb-bluetooth/magazineluiza/235690400/bfd4156080d75bb84ed605cbd7002cf1.jpg"
-    },
-    {
-      "id": 14,
-      "nome": "Garrafa D'agua",
-      "desc": "roda",
-      "preco": "10",
       "img": "https://picsum.photos/100/100"
     }
   ]

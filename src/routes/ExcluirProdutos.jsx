@@ -24,3 +24,18 @@ document.title = "Excluir Produtos";
                 });
             }, [id]);
 
+          // Excluindo Produto !!!
+            const handleExcluirProduto = () => {
+            fetch(`http://localhost:5000/produtos/${id}`, {
+                method: "DELETE",
+                headers: {
+                "Content-Type": "application/json",
+                },
+
+return (
+<>
+
+</>
+
+); 
+}

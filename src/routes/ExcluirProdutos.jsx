@@ -31,6 +31,23 @@ document.title = "Excluir Produtos";
                 headers: {
                 "Content-Type": "application/json",
                 },
+            }) // Utilizando agora status de servidor para me guiar
+            .then((response) => {
+                    if (response.status === 204) { // Condição verdadeira 
+                        alert("Erro ao excluir o produto. Tente novamente.");
+                            navigate("/produtos");
+            
+                        } else {    
+                            alert("Produto excluido ;D");   }   })  // Condição Falsa
+        
+                            .catch((error) => {
+                                console.error("Erro ao excluir o produto:", error);
+                                        alert("Erro ao excluir o produto. Tente novamente.");
+                                                                                                }); };
+    
+            if (!produto) {
+                return <p>Carregando...</p>;
+                }
 
 return (
 <>

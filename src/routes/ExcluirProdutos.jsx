@@ -51,7 +51,19 @@ document.title = "Excluir Produtos";
 
 return (
 <>
+<div>
+        <h1>Excluir Produto</h1>
+        <div className={style.membros}> 
+                <h3> CP05- Excluindo Produtos 🤓 </h3>
+                    <h4> Lista Membranas: </h4>
+                    <p>   Felipe Moraes Silva | rm98455  </p>
+                    <p>   Gustavo Moreira Gonçalves | rm97999</p>
+                    <p>   Mariana Neugebauer Dourado | rm550494 </p>
+                    <p>   Vinícius de Alencar Chagas | rm550167</p> 
+                </div>
 
+
+    </div>
 </>
 
 ); 

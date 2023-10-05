@@ -36,20 +36,6 @@
       "img": "https://picsum.photos/100/100"
     },
     {
-      "id": 8,
-      "nome": "Controle Remoto",
-      "desc": "Controle Universal Samsung",
-      "preco": "120",
-      "img": "https://www.eletronicafaria.com.br/2926-large_default/controle-remoto-tv-lcdled-samsung-aa59-00463a-aa59-00469a-aa59-00515a-aa59-00511a-confira-os-modelos.jpg"
-    },
-    {
-      "id": 9,
-      "nome": "Carregador Universal Indução",
-      "desc": "Carregador Duplo de Indução",
-      "preco": "200",
-      "img": "https://m.media-amazon.com/images/I/61AlFrLc+BL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
       "id": 10,
       "nome": "Cubo Mágico",
       "desc": "Cubo elétrico",

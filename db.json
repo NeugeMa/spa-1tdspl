@@ -1,4 +1,4 @@
-  {
+{
   "produtos": [
     {
       "id": 1,
@@ -36,20 +36,6 @@
       "img": "https://picsum.photos/100/100"
     },
     {
-      "id": 6,
-      "nome": "Web Cam Xiao Miau",
-      "desc": "Web Cam 360º",
-      "preco": "500",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_641356-MLB69601716544_052023-F.webp"
-    },
-    {
-      "id": 7,
-      "nome": "Microfone de Pedestal",
-      "desc": "Microfone Sensível",
-      "preco": "200",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_664279-MLA51423827157_092022-F.webp"
-    },
-    {
       "id": 8,
       "nome": "Controle Remoto",
       "desc": "Controle Universal Samsung",
@@ -85,11 +71,11 @@
       "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch5-bt-44mm-prata-16gb-bluetooth/magazineluiza/235690400/bfd4156080d75bb84ed605cbd7002cf1.jpg"
     },
     {
-      "id": 13,
-      "nome": "Caixa de Som",
-      "desc": "Edifier",
-      "preco": "2000",
-      "img": "https://images.kabum.com.br/produtos/fotos/30158/30158_index_gg.jpg"
+      "id": 14,
+      "nome": "Garrafa D'agua",
+      "desc": "roda",
+      "preco": "10",
+      "img": "https://picsum.photos/100/100"
     }
   ]
 }

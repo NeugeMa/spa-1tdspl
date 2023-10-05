@@ -62,6 +62,20 @@ return (
                     <p>   Vinícius de Alencar Chagas | rm550167</p> 
                 </div>
 
+        <div className={style.card}>
+            <h2>Produto Selecionado</h2>
+            <figure>
+                <img src={produto.img} alt={produto.desc} title={produto.desc} />
+
+                <figcaption> {produto.nome} - <span>R$ {produto.preco}</span> </figcaption>
+            </figure>
+
+            <div className={style.bnt}>
+            <button onClick={handleExcluirProduto}>EXCLUIR</button>
+            <button onClick={() => navigate("/produtos")}>CANCELAR</button>
+            </div>
+        </div>
+
 
     </div>
 </>

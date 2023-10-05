@@ -1,0 +1,53 @@
+
+
+.formGroup{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: 80%;
+    
+    $text-color: #fff;
+    $color-outline:#ccc;
+    $disposition: block;
+    $bg-color: #000000;
+
+    @mixin inputEstilos($color-outline, $disposition){
+        outline: $color-outline;
+        display: $disposition;
+        width: 90%;
+        height: 35px;
+        margin: 0 auto;
+        clear: right
+
+    }
+
+
+
+    .formInput input{
+        @include inputEstilos($color-outline,$disposition);
+    }
+
+    .btnClose{
+        background-color: $text-color;
+        color: #000000;
+        border-radius: 50%;
+        display: inline-block;
+        font-weight: bold;
+        transition: background-color 200ms;
+        float: right;
+        width: 3%;
+        text-align: center;
+        border: 2px solid #7c7979;
+        user-select: none;
+        
+        &:hover{
+            background-color: #000000;
+            color: #fff;
+        }
+        &:active{
+            background-color: #f00635;
+            color: #fff;
+        }
+    }
+
+}

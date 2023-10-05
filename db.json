@@ -1,0 +1,95 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Teclado",
+      "desc": "Mecânico",
+      "preco": 150,
+      "img": "https://picsum.photos/100/100"
+    },
+    {
+      "id": 2,
+      "nome": "Mouse",
+      "desc": "Óptico",
+      "preco": 120,
+      "img": "https://picsum.photos/100/100"
+    },
+    {
+      "id": 3,
+      "nome": "Monitor",
+      "desc": "150Hz",
+      "preco": 1500,
+      "img": "https://picsum.photos/100/100"
+    },
+    {
+      "id": 4,
+      "nome": "HeadSet",
+      "desc": "8D",
+      "preco": 550,
+      "img": "https://picsum.photos/100/100"
+    },
+    {
+      "id": 5,
+      "nome": "Cadeira Gamer",
+      "desc": "Telescópica",
+      "preco": 2500,
+      "img": "https://picsum.photos/100/100"
+    },
+    {
+      "id": 6,
+      "nome": "Web Cam Xiao Miau",
+      "desc": "Web Cam 360º",
+      "preco": "500",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_641356-MLB69601716544_052023-F.webp"
+    },
+    {
+      "id": 7,
+      "nome": "Microfone de Pedestal",
+      "desc": "Microfone Sensível",
+      "preco": "200",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_664279-MLA51423827157_092022-F.webp"
+    },
+    {
+      "id": 8,
+      "nome": "Controle Remoto",
+      "desc": "Controle Universal Samsung",
+      "preco": "120",
+      "img": "https://www.eletronicafaria.com.br/2926-large_default/controle-remoto-tv-lcdled-samsung-aa59-00463a-aa59-00469a-aa59-00515a-aa59-00511a-confira-os-modelos.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Carregador Universal Indução",
+      "desc": "Carregador Duplo de Indução",
+      "preco": "200",
+      "img": "https://m.media-amazon.com/images/I/61AlFrLc+BL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 10,
+      "nome": "Cubo Mágico",
+      "desc": "Cubo elétrico",
+      "preco": "330",
+      "img": "https://d3ddx6b2p2pevg.cloudfront.net/Custom/Content/Products/11/15/1115677_cubo-magico-sunny-rubiks-3x3-2794_m4_637973762528753205.jpg"
+    },
+    {
+      "id": 11,
+      "nome": "Cubo Mágico",
+      "desc": "Cubo elétrico",
+      "preco": "330",
+      "img": "https://d3ddx6b2p2pevg.cloudfront.net/Custom/Content/Products/11/15/1115677_cubo-magico-sunny-rubiks-3x3-2794_m4_637973762528753205.jpg"
+    },
+    {
+      "id": 12,
+      "nome": "Smart Watch",
+      "desc": "Smart Watch Samsung",
+      "preco": "1200",
+      "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch5-bt-44mm-prata-16gb-bluetooth/magazineluiza/235690400/bfd4156080d75bb84ed605cbd7002cf1.jpg"
+    },
+    {
+      "id": 13,
+      "nome": "Caixa de Som",
+      "desc": "Edifier",
+      "preco": "2000",
+      "img": "https://images.kabum.com.br/produtos/fotos/30158/30158_index_gg.jpg"
+    }
+  ]
+}

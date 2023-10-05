@@ -1,0 +1,50 @@
+
+
+.estilo{
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .tableHeaders{
+        text-align: center;
+        background-color: #565553;
+        color: #fff;
+
+        & th{
+            border: 2px solid #ccc;
+        }
+
+    }
+
+    .tableLine{
+        background-color: #ccc;
+        &:hover{
+            background-color: #565553;
+            color:#fff;
+        }
+
+        & td{
+            border : 2px solid #e1e1e1;
+            
+            &:first-child{
+                text-align: center;
+            }
+
+            &:last-child{
+                text-align: center;
+            }
+
+            & img{
+                width: 100px;
+            }
+        }
+    }
+
+    .tableFooter{
+        text-align: center;
+        background-color: #565553;
+        color: #fff;
+    }
+
+}

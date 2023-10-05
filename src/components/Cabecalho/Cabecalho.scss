@@ -6,7 +6,7 @@
         margin: 0;
         padding: 0;
         width: 160px;
-        background-color: #ccc;
+        background-color: #FFC0CB;
 
 
         li a {
@@ -17,7 +17,7 @@
             transition: background-color 300ms ease-out, color 300ms ease-out;
 
             &:hover{
-                background-color: #888;
+                background-color: #f38497;
                 color: #fff;
             }
 
